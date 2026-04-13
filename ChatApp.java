@@ -80,7 +80,7 @@ class Login {
         }
     }
 
-    // A little helper so the main menu knows if anyone has registered
+    // main menu to know if anyone has registered
     public boolean isRegistered() {
         return registered;
     }
@@ -113,7 +113,7 @@ public class ChatApp {
                 scanner.next();
             }
             choice = scanner.nextInt();
-            scanner.nextLine();  // clean up the newline
+            scanner.nextLine();  
 
             // ---------- REGISTER ----------
             if (choice == 1) {
@@ -155,7 +155,7 @@ public class ChatApp {
             else if (choice == 3) {
                 System.out.println("\n Thank you for using the CHATAPP, have a great day! :)");
             }
-            // ---------- anything else ----------
+
             else {
                 System.out.println("\n Incorrect input please pick 1, 2 or 3.");
             }
